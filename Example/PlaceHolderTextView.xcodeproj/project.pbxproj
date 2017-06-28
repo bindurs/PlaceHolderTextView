@@ -13,7 +13,7 @@
 		F45E3FD31F027A370096B528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45E3FD11F027A370096B528 /* Main.storyboard */; };
 		F45E3FD51F027A370096B528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45E3FD41F027A370096B528 /* Assets.xcassets */; };
 		F45E3FD81F027A370096B528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45E3FD61F027A370096B528 /* LaunchScreen.storyboard */; };
-		F45E3FE21F027A650096B528 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45E3FE11F027A650096B528 /* UIPlaceHolderTextView.m */; };
+		F4DB945D1F0377E5004AA086 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DB945C1F0377E5004AA086 /* UIPlaceHolderTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		F45E3FD41F027A370096B528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45E3FD71F027A370096B528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45E3FD91F027A370096B528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F45E3FE01F027A650096B528 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
-		F45E3FE11F027A650096B528 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		F4DB945B1F0377E5004AA086 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		F4DB945C1F0377E5004AA086 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		F45E3FC71F027A370096B528 /* PlaceHolderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				F45E3FDF1F027A650096B528 /* PlaceHolderTextView */,
+				F4DB945A1F0377E5004AA086 /* PlaceHolderTextView */,
 				F45E3FCB1F027A370096B528 /* AppDelegate.h */,
 				F45E3FCC1F027A370096B528 /* AppDelegate.m */,
 				F45E3FCE1F027A370096B528 /* ViewController.h */,
@@ -83,11 +83,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F45E3FDF1F027A650096B528 /* PlaceHolderTextView */ = {
+		F4DB945A1F0377E5004AA086 /* PlaceHolderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				F45E3FE01F027A650096B528 /* UIPlaceHolderTextView.h */,
-				F45E3FE11F027A650096B528 /* UIPlaceHolderTextView.m */,
+				F4DB945B1F0377E5004AA086 /* UIPlaceHolderTextView.h */,
+				F4DB945C1F0377E5004AA086 /* UIPlaceHolderTextView.m */,
 			);
 			path = PlaceHolderTextView;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				F45E3FD01F027A370096B528 /* ViewController.m in Sources */,
 				F45E3FCD1F027A370096B528 /* AppDelegate.m in Sources */,
 				F45E3FCA1F027A370096B528 /* main.m in Sources */,
-				F45E3FE21F027A650096B528 /* UIPlaceHolderTextView.m in Sources */,
+				F4DB945D1F0377E5004AA086 /* UIPlaceHolderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +328,7 @@
 				F45E3FDE1F027A370096B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

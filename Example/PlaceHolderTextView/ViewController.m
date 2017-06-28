@@ -20,9 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.textView.placeholderText = @"Enter Text....";
+    self.textView.placeholderText = @"Enter Text ...";
     self.textView.placeholderColor = UIColor.grayColor;
-    self.textView.placeholderFont = [UIFont fontWithName:@"Arial-BoldMT" size:12.0];
+    self.textView.placeholderFont = [UIFont fontWithName:@"Arial-BoldMT" size:14.0];
     self.textView.textViewBorderWidth = 3;
     self.textView.textViewCornerRadius = 5;
     self.textView.textViewBorderColor = UIColor.blueColor;
