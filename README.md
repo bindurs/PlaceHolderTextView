@@ -19,13 +19,11 @@ pod 'BRSPlaceHolderTextView'
 ## Usage 
 
 * **Creating TextView :**
-
 ``` objective-c
 self.textView=[[BRSPlaceHolderTextView alloc]initWithFrame:CGRectMake(0, 5,[UIScreen mainScreen].bounds.size.width, 50)];
 ```
 
 * **Configuration :**
-
 ``` objective-c
     self.textView.placeholderText = @"Enter Text ...";
     self.textView.placeholderColor = UIColor.grayColor;
