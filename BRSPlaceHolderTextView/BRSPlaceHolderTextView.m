@@ -1,3 +1,24 @@
+//       MIT License
+//      
+//       Copyright (c) 2017 bindurs
+//      
+//       Permission is hereby granted, free of charge, to any person obtaining a copy
+//       of this software and associated documentation files (the "Software"), to deal
+//       in the Software without restriction, including without limitation the rights
+//       to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//       copies of the Software, and to permit persons to whom the Software is
+//       furnished to do so, subject to the following conditions:
+//      
+//       The above copyright notice and this permission notice shall be included in all
+//       copies or substantial portions of the Software.
+//      
+//       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//       FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//       AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//       SOFTWARE.
 //
 //  BRSPlaceHolderTextView.m
 //
@@ -60,16 +81,16 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
                                              selector:@selector(textChanged:)
                                                  name:UITextViewTextDidChangeNotification
                                                object:self];
-    
+
     CGFloat labelLeftOffset = kLabelLeftOffset;
     // Use our calculated label offset from initWith…:
     CGFloat labelTopOffset = self.topLabelOffset;
-    
+
     // On retina iPhones and iPads, the label is offset by 0.5 points.
     if ([[UIScreen mainScreen] scale] == 2.0) {
         labelTopOffset += kLabelTopOffsetRetina;
     }
-    
+
     CGSize labelOffset = CGSizeMake(labelLeftOffset, labelTopOffset);
     CGRect labelFrame = [self placeholderLabelFrameWithOffset:labelOffset];
     [self createPlaceholderLabel:labelFrame];
@@ -96,7 +117,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
     } else {
         self.placeholderLabel.textColor = [UIColor colorWithWhite:0.71f alpha:1.0f];
     }
-    
+
     // UIKit effects on the UITextView, like selection ranges
     // and the cursor, are done in a view above the text view,
     // so no need to order this below anything else.
@@ -156,7 +177,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 - (void)setFont:(UIFont *)font {
     // Call super.
     [super setFont:font];
-    
+
     self.placeholderLabel.font = self.font;
 }
 
@@ -164,7 +185,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 - (void)setTextAlignment:(NSTextAlignment)textAlignment {
     // Call super.
     [super setTextAlignment:textAlignment];
-    
+
     self.placeholderLabel.textAlignment = textAlignment;
 }
 
@@ -180,7 +201,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 - (id)insertDictationResultPlaceholder {
     // Call super.
     id placeholder = [super insertDictationResultPlaceholder];
-    
+
     // Use -[setHidden] here instead of setAlpha:
     // these events also trigger -[textChanged],
     // which has a different criteria by which it shows the label,
@@ -193,10 +214,10 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 - (void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult {
     // Call super.
     [super removeDictationResultPlaceholder:placeholder willInsertResult:willInsertResult];
-    
+
     // Unset the hidden flag from insertDictationResultPlaceholder.
     self.placeholderLabel.hidden = NO;
-    
+
     // Update our text label based on the entered text.
     [self updatePlaceholderLabelVisibility];
 }
@@ -217,7 +238,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 - (void)setText:(NSString *)text {
     // Call super.
     [super setText:text];
-    
+
     [self updatePlaceholderLabelVisibility];
 }
 
