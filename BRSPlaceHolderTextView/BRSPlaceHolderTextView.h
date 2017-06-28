@@ -1,10 +1,10 @@
 //
-//  UIPlaceHolderTextView.h
+//  BRSPlaceHolderTextView.h
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIPlaceHolderTextView : UITextView
+@interface BRSPlaceHolderTextView : UITextView
 
 @property (nonatomic, copy) NSString *placeholderText;
 @property (nonatomic, copy) UIColor *placeholderColor;

@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "UIPlaceHolderTextView.h"
+#import "BRSPlaceHolderTextView.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIPlaceHolderTextView *textView;
+@property (strong, nonatomic) IBOutlet BRSPlaceHolderTextView *textView;
 
 @end
 

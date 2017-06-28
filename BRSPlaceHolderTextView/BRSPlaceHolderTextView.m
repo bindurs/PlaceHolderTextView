@@ -1,8 +1,8 @@
 //
-//  UIPlaceHolderTextView.m
+//  BRSPlaceHolderTextView.m
 //
 
-#import "UIPlaceHolderTextView.h"
+#import "BRSPlaceHolderTextView.h"
 
 // Manually-selected label offsets to align placeholder label with text entry.
 static CGFloat const kLabelLeftOffset = 8.f;
@@ -13,7 +13,7 @@ static CGFloat const kLabelTopOffsetFromIB = 8.f;
 // On retina iPhones and iPads, the label is offset by 0.5 points:
 static CGFloat const kLabelTopOffsetRetina = 0.5f;
 
-@interface UIPlaceHolderTextView ()
+@interface BRSPlaceHolderTextView ()
 
 @property (nonatomic, strong) UILabel *placeholderLabel;
 
@@ -27,7 +27,7 @@ static CGFloat const kLabelTopOffsetRetina = 0.5f;
 @end
 
 
-@implementation UIPlaceHolderTextView
+@implementation BRSPlaceHolderTextView
 
 #pragma mark - Initializers
 
