@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "8.0"
   s.author        = { "Bindu R S" => "bindu93rstvm@gmail.com" }
   s.source        = { :git => "https://github.com/bindurs/PlaceHolderTextView.git", :tag => "#{s.version}" }
-  s.source_files  = "PlaceHolderTextView", "PlaceHolderTextView/*.{h,m}"
+  s.source_files  = "BRSPlaceHolderTextView", "BRSPlaceHolderTextView/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 end
